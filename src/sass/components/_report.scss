@@ -1,0 +1,40 @@
+.report {
+    padding: 40px 0 25px;
+
+    .report__title {
+        padding-bottom: 10px;
+        font-weight: 600;
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 15px;
+    }
+    .report__item {
+        position: relative;
+        width: 100%;
+        height: 150px;
+        margin-bottom: 15px;
+
+        &:hover {
+            .report__item__title {
+                color: #00bfff;
+            }
+        }
+
+        img {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+        .report__item__title {
+            padding: 5px 10px;
+            color: #fff;
+            background-color: rgba(0, 0, 0, 0.6);
+            font-weight: 600;
+            font-size: 13px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+        }
+    }
+}
