@@ -9,3 +9,10 @@ body {
     margin:0;
     overflow-x: hidden;
 }
+
+.seperator {
+    background-image: url(../img/seperator.png);
+    height: 26px;
+    background-repeat: repeat-x;
+    width: 100%;
+}
