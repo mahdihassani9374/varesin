@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="./css/icons.min.css" />
     <link rel="stylesheet" herf="./lib/slick/slick.css" />
     <link rel="stylesheet" href="./lib/persian-datePicker/persian-datepicker.min.css" />
+    <link rel="stylesheet" href="./lib/laddaButton/ladda-themeless.min.css" />
 
     <style>
         .header {
@@ -155,7 +156,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-12 col-xs-12">
-                    <div class="form-group">                        
+                    <div class="form-group">
                         <label>زمان آزاد پیشنهادی شما جهت مصاحبه</label>
                         <input required="" type="text" class="form-control"
                             placeholder="زمان آزاد پیشنهادی شما جهت مصاحبه">
@@ -217,7 +218,9 @@
             <div class="row">
                 <div class="col-md-6 col-sm-12 col-xs-12">
                     <div class="form-group">
-                        <button class="btn btn-primary btn-block" type="submit">ثبت اطلاعات و ثبت نام</button>
+                        <button class="ladda-button btn btn-primary btn-block" data-style="zoom-in">
+                            <span class="ladda-label">ثبت اطلاعات و ثبت نام</span>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -276,13 +279,19 @@
     <script src="./lib/slick/slick.js"></script>
     <script src="./lib/persian-datePicker/persian-date.min.js"></script>
     <script src="./lib/persian-datePicker/persian-datepicker.min.js"></script>
+    <script src="./lib/laddaButton/spin.min.js"></script>
+    <script src="./lib/laddaButton/ladda.min.js"></script>    
     <!-- <script src="./js/script.js"></script> -->
 
     <script>
         $(function () {
             $("[data-role='date']").pDatepicker({
-                format: 'YYYY/MM/DD',                
+                format: 'YYYY/MM/DD',
             });
+            var l = Ladda.create(document.querySelector('.ladda-button'));
+
+            // Start loading
+            l.start();
         })
     </script>
 </body>
