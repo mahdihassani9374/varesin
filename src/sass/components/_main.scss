@@ -6,7 +6,7 @@ body {
     font-family: "MyriadArabic";
     // font-family: MehdiHeydari;
     // font-family: BNazanin;
-    margin:0;
+    margin: 0;
     overflow-x: hidden;
 }
 
@@ -29,4 +29,26 @@ body {
     font-size: 18px;
     font-weight: 500;
     margin-bottom: 10px;
+}
+
+.datepicker-plot-area .datepicker-day-view .table-days td span,
+.datepicker-plot-area .datepicker-day-view .month-grid-box .header .header-row-cell,
+.datepicker-plot-area .datepicker-navigator .pwt-btn-switch ,
+ .datepicker-plot-area .datepicker-navigator .pwt-btn-prev ,
+  .datepicker-plot-area .datepicker-navigator .pwt-btn-next , .pwt-btn-today ,
+   .pwt-btn-calendar , .year-item , .month-item  {
+    font-family: "MyriadArabic";
+    font-size: 18px;
+}
+
+.datepicker-plot-area {
+    width: 300px !important;
+
+    .header {
+        padding: 0 !important;
+
+        .header-row-cell {
+            color: #fff !important;
+        }
+    }
 }

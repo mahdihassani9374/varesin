@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="./lib/pe-icon-7-stroke/css/pe-icon-7-stroke.css" />
     <link rel="stylesheet" href="./css/icons.min.css" />
     <link rel="stylesheet" herf="./lib/slick/slick.css" />
+    <link rel="stylesheet" href="./lib/persian-datePicker/persian-datepicker.min.css" />
 
     <style>
         .header {
@@ -144,7 +145,7 @@
                 <div class="col-md-6 col-sm-12 col-xs-12">
                     <div class="form-group">
                         <label>تاریخ تولد</label>
-                        <input required="" type="text" class="form-control" placeholder="تاریخ تولد">
+                        <input data-role='date' type="text" class="form-control" placeholder="تاریخ تولد">
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-12 col-xs-12">
@@ -154,7 +155,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-12 col-xs-12">
-                    <div class="form-group">
+                    <div class="form-group">                        
                         <label>زمان آزاد پیشنهادی شما جهت مصاحبه</label>
                         <input required="" type="text" class="form-control"
                             placeholder="زمان آزاد پیشنهادی شما جهت مصاحبه">
@@ -222,7 +223,7 @@
             </div>
             <hr />
             <p class="alert alert-danger">
-                اعزام ها در حاشیه تهران هر 14 روز یکبار جمعه ها و حدود سه ساعت میباشد 
+                اعزام ها در حاشیه تهران هر 14 روز یکبار جمعه ها و حدود سه ساعت میباشد
             </p>
             <p class="alert alert-danger">
                 عرصه های مختلف فعالیت داریم مثل آموزشی . سلامتی . فرهنگی و ....
@@ -273,7 +274,17 @@
     <script src="./js/bootstrap-touch-slider-min.js"></script>
     <script src="./js/jquery.touchSwipe.min.js"></script>
     <script src="./lib/slick/slick.js"></script>
-    <script src="./js/script.js"></script>
+    <script src="./lib/persian-datePicker/persian-date.min.js"></script>
+    <script src="./lib/persian-datePicker/persian-datepicker.min.js"></script>
+    <!-- <script src="./js/script.js"></script> -->
+
+    <script>
+        $(function () {
+            $("[data-role='date']").pDatepicker({
+                format: 'YYYY/MM/DD',                
+            });
+        })
+    </script>
 </body>
 
 </html>
