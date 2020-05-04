@@ -27,28 +27,43 @@
         <div class="admin__header">
             <div>
                 <a href="#"><i class="fa fa-diamond"></i></a>
-                <a href="#">پنل ادمین  وارثین نون و قلم</a>
+                <a href="#">پنل ادمین وارثین نون و قلم</a>
             </div>
             <div class="dropdown">
                 <span class="dropdown-toggle" data-toggle="dropdown">مهدی حسنی خوش آمدید !
                     <span class="caret"></span>
                     <img src="./img/user.png" class="img-circle" style="width: 40px;" />
-                </span>               
+                </span>
                 <ul class="dropdown-menu">
                     <li><a href="#">ویرایش پروفایل </a></li>
                     <li><a href="#">تغییر رمز عبور</a></li>
                     <li><a href="#">خروج</a></li>
                 </ul>
             </div>
+            <div class="collapse-toggle">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
         </div>
-        <div class="sidebar">
+        <div class="sidebar collapse" id="myNavbar">
             <!-- <a class="active">پنل مدیرتی وارثین نون و قلم</a> -->
+            <div class="sidebar__profile">
+                <div class="sidebar__profile__img">
+                    <img src="./img/user.png" class="img-circle img-responsive" />
+                </div>
+                <div class="sidebar__profile__title">
+                    مهدی حسنی 
+                </div>
+            </div>
             <a href="#news"><i class="fa fa-asterisk" aria-hidden="true"></i> مدیریت خبرها </a>
             <a href="#contact"><i class="fa fa-asterisk" aria-hidden="true"></i> مدیریت اسلاید شو </a>
             <a href="#about"><i class="fa fa-asterisk" aria-hidden="true"></i> مدیریت اینفوها</a>
         </div>
 
-        <div class="content">
+        <div class="content">            
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="#">پنل مدیریتی</a></li>

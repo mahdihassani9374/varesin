@@ -18,6 +18,7 @@
     }
 
     .dropdown-menu {
+
       // right: -38px;
       a {
         color: #08467a;
@@ -29,7 +30,7 @@
       color: #fff;
       text-decoration: none;
       font-size: 16px;
-      
+
     }
   }
 
@@ -39,9 +40,48 @@
     width: 230px;
     background-color: #185a92;
     position: fixed;
-    height: calc(100% - 60px);
+    height: calc(100% - 60px) !important;
     overflow: auto;
     top: 60px;
+
+    @media (max-width:767px) {
+      &.in {
+        display: block;
+        position: static;
+        height: auto;
+        width: 100%;
+        margin-top: 60px;
+        margin-bottom: -60px;
+      }
+    }
+
+    @media (min-width:767px) {
+      &.collapse {
+        display: block;
+      }
+    }
+
+    .sidebar__profile {
+      padding: 10px;
+      background-color: #45739b;
+
+      .sidebar__profile__img {
+        text-align: center;
+
+        img {
+          max-width: 100px;
+          border: 2px solid #fff;
+        }
+      }
+
+      .sidebar__profile__title {
+        color: #fff;
+        font-size: 18px;
+        font-weight: 500;
+        text-align: center;
+        margin-top: 10px;
+      }
+    }
   }
 
   .sidebar a {
@@ -69,30 +109,14 @@
     margin-top: 60px;
   }
 
-  @media screen and (max-width: 700px) {
-    .sidebar {
-      width: 100%;
-      height: auto;
-      position: relative;
-    }
+  // @media screen and (max-width: 400px) {
+  //   .sidebar a {
+  //     text-align: center;
+  //     float: none;
+  //   }
+  // }
 
-    .sidebar a {
-      float: right;
-    }
-
-    div.content {
-      margin-right: 0;
-    }
-  }
-
-  @media screen and (max-width: 400px) {
-    .sidebar a {
-      text-align: center;
-      float: none;
-    }
-  }
-
-  .panel-heading {
+  .panel .panel-primary>.panel-heading {
     font-weight: 600;
     font-size: 20px;
     background-color: #00bfff !important;
@@ -101,5 +125,41 @@
   .breadcrumb a {
     font-size: 16px;
     font-weight: 600;
+  }
+
+  .navbar-toggle {
+    background-color: transparent;
+    border: 1px solid #fff;
+
+
+    .icon-bar {
+      background-color: #fff;
+    }
+  }
+
+  .collapse-toggle {
+    display: none;
+  }
+
+  @media screen and (max-width: 767px) {
+    .sidebar {
+      display: none;
+
+      .sidebar__profile {
+        display: none;
+      }
+    }
+
+    .collapse-toggle {
+      display: block;
+    }
+
+    .content {
+      margin-right: 0px;
+    }
+
+    &>.admin__header>.dropdown {
+      display: none;
+    }
   }
 }
