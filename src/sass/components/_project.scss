@@ -10,24 +10,23 @@
         text-align: center;
         margin-bottom: 20px;
     }
+
     .project__slick {
         direction: ltr;
 
-        .project__slick__item {           
+        .project__slick__item {
             padding: 3px;
             box-shadow: 0px 0px 10px #ccc;
             border: 1px solid #ccc;
             background-color: #fff;
 
-            .project__slick__item__img {
-                
-            }
+            .project__slick__item__img {}
 
             .project__slick__item__title {
                 text-align: center;
                 font-size: 16px;
                 font-weight: 600;
-                margin:10px 0;
+                margin: 10px 0;
                 color: #00bfff;
             }
 
@@ -38,6 +37,7 @@
                 i {
                     color: #00bfff;
                 }
+
                 .row {
                     margin-bottom: 10px;
                 }
@@ -47,6 +47,17 @@
                 border-radius: 15px;
                 margin-bottom: 5px;
             }
+        }
+    }
+
+    .project__arrow {
+        text-align: left;
+        margin-left: 15px;
+
+        i {
+            font-size: 35px;
+            color: #00bfff;
+            cursor: pointer;
         }
     }
 }
